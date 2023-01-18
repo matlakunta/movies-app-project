@@ -1,0 +1,36 @@
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d0d;
+  padding: 30px;
+  min-height: 100vh;
+}
+.failure-content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .failure-content {
+    font-size: 20px;
+  }
+}
+.try-again-btn {
+  border: none;
+  background-color: #ffffff;
+  border-radius: 3px;
+  color: #171f46;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}

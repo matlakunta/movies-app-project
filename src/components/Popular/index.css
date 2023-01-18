@@ -1,0 +1,19 @@
+.popular-container {
+  background-color: black;
+}
+.popular-movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .popular-movies-list {
+    margin-top: 50px;
+    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
