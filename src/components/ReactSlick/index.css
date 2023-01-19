@@ -1,0 +1,39 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slick-container {
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 10px;
+}
+
+.list-item {
+  background: transparent;
+  list-style-type: none;
+  margin-right: 30px;
+}
+.movie-image {
+  height: 120px;
+  width: 130px;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+@media (min-width: 768px) {
+  .movie-image {
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+  }
+  .slick-container {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+
+  .movies-page {
+    margin-left: 10px;
+  }
+}

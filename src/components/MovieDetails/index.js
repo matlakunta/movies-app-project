@@ -1,13 +1,16 @@
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const MovieDetails = props => {
   const {movieDetails} = props
-  const {posterPath, title} = movieDetails
+  const {posterPath, title, id} = movieDetails
 
   return (
-    <li>
-      <img className="popular-img" src={posterPath} alt={title} />
-    </li>
+    <Link to={`/movies/${id}`}>
+      <li>
+        <img className="popular-img" alt={title} src={posterPath} />
+      </li>
+    </Link>
   )
 }
 export default MovieDetails

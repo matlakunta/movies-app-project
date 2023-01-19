@@ -5,6 +5,7 @@ import Loading from '../Loading'
 import FailureView from '../FailureView'
 import Trending from '../Trending'
 import Originals from '../Originals'
+import Footer from '../Footer'
 
 import './index.css'
 
@@ -114,9 +115,11 @@ class Home extends Component {
           <Trending />
           <h1 className="side-heading">Originals</h1>
           <Originals />
+          <Footer />
         </div>
       </>
     )
   }
 }
+
 export default Home

@@ -1,0 +1,141 @@
+.header-section {
+  background-color: #131313;
+}
+.account-container {
+  padding-top: 70px;
+  padding-left: 30px;
+  min-height: 60vh;
+}
+.account-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 28px;
+
+  color: #131313;
+}
+.hr-line {
+  background: #cbd5e1;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 10px;
+}
+.membership-container {
+  padding-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+}
+.membership-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+
+  /* Light / blue-gray / 400 */
+
+  color: #94a3b8;
+}
+.user-details {
+  margin-left: 20px;
+}
+.user-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Light / blue-gray / 800 */
+
+  color: #1e293b;
+}
+.password {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Light / blue-gray / 500 */
+
+  color: #64748b;
+  margin-top: 20px;
+}
+.plan-details-container {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.plan-details-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 23px;
+
+  /* Light / blue-gray / 400 */
+
+  color: #94a3b8;
+  margin-right: 20px;
+}
+.premium-user-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Light / blue-gray / 800 */
+
+  color: #1e293b;
+  margin-right: 20px;
+}
+.ultra-hd {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+
+  /* Light / blue-gray / 800 */
+
+  color: #1e293b;
+  margin-left: 20px;
+  border: 2px solid #1e293b;
+  border-radius: 3px;
+  padding: 5px;
+}
+.logout-btn {
+  background: #e50914;
+  border-radius: 4px;
+  color: #ffffff;
+  border-width: 0px;
+  border-style: solid;
+  margin-top: 100px;
+  margin-left: 150px;
+  font-size: 30px;
+  padding: 10px;
+  width: 150px;
+  margin-bottom: 60px;
+}
+.footer-section {
+  background-color: black;
+  min-height: 40vh;
+  padding-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .account-container {
+    padding-left: 120px;
+  }
+  .logout-btn {
+    margin-left: 350px;
+    margin-bottom: 100px;
+  }
+}

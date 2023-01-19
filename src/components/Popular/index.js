@@ -4,6 +4,7 @@ import Header from '../Header'
 import Loading from '../Loading'
 import FailureView from '../FailureView'
 import MovieDetails from '../MovieDetails'
+import Footer from '../Footer'
 
 import './index.css'
 
@@ -97,6 +98,7 @@ class Popular extends Component {
       <div className="popular-container">
         <Header />
         {this.renderPopularPage()}
+        <Footer />
       </div>
     )
   }

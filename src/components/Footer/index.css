@@ -1,0 +1,41 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+.footer-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+.icon {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+  margin: 5px;
+}
+.contact-us {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 20px;
+  text-decoration: none;
+}

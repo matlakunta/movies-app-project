@@ -10,6 +10,7 @@ import './index.css'
 class Header extends Component {
   state = {
     fullMenu: false,
+    searchValue: '',
   }
 
   showMenu = () => {
@@ -20,8 +21,20 @@ class Header extends Component {
     this.setState({fullMenu: false})
   }
 
+  getSearchInput = event => {
+    this.setState({searchValue: event.target.value})
+  }
+
+  onSearch = () => {
+    const {getSearchMoviesData} = this.props
+    const {searchValue} = this.state
+    if (searchValue !== '') {
+      getSearchMoviesData(searchValue)
+    }
+  }
+
   render() {
-    const {fullMenu} = this.state
+    const {fullMenu, searchValue} = this.state
     const {searchRoute, isHome, isPopular, isAccount} = this.props
     const searchContainer = searchRoute
       ? 'search-input-route-container search-input-container'
@@ -57,13 +70,20 @@ class Header extends Component {
             <div className={searchContainer}>
               {searchRoute && (
                 <input
+                  value={searchValue}
+                  onChange={this.getSearchInput}
                   type="search"
                   className="search-input"
                   placeholder="Search"
                 />
               )}
               <Link to="/search">
-                <button type="button" className={searchBtn}>
+                <button
+                  onClick={this.onSearch}
+                  type="button"
+                  testid="searchButton"
+                  className={searchBtn}
+                >
                   <HiOutlineSearch className={searchIcon} />
                 </button>
               </Link>

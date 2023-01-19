@@ -1,6 +1,7 @@
 import {Component} from 'react'
+import {Link} from 'react-router-dom'
 import Slider from 'react-slick'
-import {withRouter} from 'react-router-dom'
+
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
@@ -44,13 +45,15 @@ class ReactSlick extends Component {
       <ul className="movies-page">
         <Slider {...settings}>
           {moviesList.map(eachMovie => (
-            <li className="list-item" key={eachMovie.id}>
-              <img
-                src={eachMovie.posterPath}
-                alt={eachMovie.title}
-                className="movie-image"
-              />
-            </li>
+            <Link to={`/movies/${eachMovie.id}`} key={eachMovie.id}>
+              <li className="list-item" key={eachMovie.id}>
+                <img
+                  src={eachMovie.posterPath}
+                  alt={eachMovie.title}
+                  className="movie-image"
+                />
+              </li>
+            </Link>
           ))}
         </Slider>
       </ul>
@@ -65,4 +68,4 @@ class ReactSlick extends Component {
     )
   }
 }
-export default withRouter(ReactSlick)
+export default ReactSlick
